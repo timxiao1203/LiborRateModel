@@ -2,7 +2,7 @@
 
 LIBOR Rate Model is used for pricing Libor-rate based derivative securities. The model is applied, primarily, to value instruments that settle at a Libor-rate reset point.  In order to value instruments that settle at points intermediate to Libor resets, we calculate the numeraire value at the settlement time by interpolating the numeraire at bracketing Libor reset points. 
 
-Libor rate model is very useful to price callable exotics. Many derivatives have callable features. Callable exotics are among the most challenging derivatives to price. These products are loosely defined by the provision that gives the holder or issuer the right to call the product after a lock-out period (more details at https://finpricing.com/lib/EqCallable.html).
+Libor rate model is very useful to price callable exotics. Many derivatives have callable features. Callable exotics are among the most challenging derivatives to price. These products are loosely defined by the provision that gives the holder or issuer the right to call the product after a lock-out period.
 
 Let   denote a Libor rate that sets at time   for an accrual period  .  A European caplet on   is an option with payoff at   of the form
  .
@@ -50,4 +50,7 @@ denotes a Chebyshev polynomial of the first kind.
 
 In the above, the parameters   and   are determined from calibration.
 
+References:
+
+https://finpricing.com/aboutus.html
 
